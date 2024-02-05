@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Exam1012_dfs {
+public class Main {
 
 	static int M, N, K;
 	static int[][] cabbage;
