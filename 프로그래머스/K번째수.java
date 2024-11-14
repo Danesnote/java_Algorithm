@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class practice{
+public class K번째수{
 
     public static void main(String[] args){
         Solution solution = new Solution();
