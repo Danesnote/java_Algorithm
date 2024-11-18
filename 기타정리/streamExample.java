@@ -1,12 +1,60 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+package 기타정리;
+import java.util.*;
+import java.util.stream.*;
+
+/**
+ * java8 부터 사용가능한 Stream 문법은
+ * 크게 3개의 흐름으로 사용이 가능하다.
+ * 1. 생성하기
+   2. 가공하기 (중개연산)
+   3. 결과만들기 (최종연산)
+   
+ *  1. 생성하기
+    - 배열 , 컬렉션, 빈스트림
+    - Stream.builder() , Stream.generate() , Stream.iterate()
+    - 기본타입형 , String , 파일스트림
+    - 병렬스트림, 스트림연결하기
+    2. 가공하기(중개연산)
+    - Filtering
+    - Mapping
+    - Sorting
+    - Iterating
+    3. 결과만들기
+    - Calculating
+    - Reduction
+    - Collecting
+    - Matching
+    - Iterating
+ * 
+ */
 
 public class streamExample {
     public static void main(String[] args) {
         
     }
+
+    //생성
+    public void create(){
+        /* 스트림은 배열 또는 컬렉션 인스턴스를 이용하여 생성
+         * 
+         */
+        String[] strArr = {"","",""};
+        Stream<String> stream = Arrays.stream(strArr);
+
+        List<String> list = Arrays.asList("a","b","c");
+        Stream<String> listStream = list.stream();
+        Stream<String> parallelStream = list.parallelStream();
+
+        Map<String,String> map = new HashMap();
+
+        //Builder로 직접 값 삽입하는법
+        Stream<String> builderStream = Stream.<String>builder()
+                                    .add("hahaha").add("easy")
+                                    .build();
+    }
+
+
+
 
     public void listFiltering(){
         // use Stream
