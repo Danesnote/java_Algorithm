@@ -47,6 +47,9 @@ public class streamExample {
 
         Map<String,String> map = new HashMap();
 
+        Collection<String> values = map.values();
+        
+
         //Builder로 직접 값 삽입하는법
         Stream<String> builderStream = Stream.<String>builder()
                                     .add("hahaha").add("easy")

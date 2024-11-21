@@ -38,7 +38,9 @@ public class methodExample {
         // reverseOrder 내림차순 정렬은 int[] 불가
         Arrays.sort(integerArr, Collections.reverseOrder()); // 
         
-        Arrays.sort(intArr,0,4);
+        Arrays.sort(intArr,0,4); // 0~4 인덱스 정렬
+
+        
 
         String[] strArr = {"a","b"};
         //내림차순 정렬

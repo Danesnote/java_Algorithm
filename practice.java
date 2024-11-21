@@ -24,35 +24,14 @@ public class practice{
 
         System.out.print(print);
 
-        String num1 = "32";
-        String num2 = "3";
-
-        // 정수 값으로 비교
-        if (num1.compareTo(num2) < 0) {
-            System.out.println(num1 + " is smaller than " + num2);
-            System.out.println(num2 + num1);
-            System.out.println(num1.compareTo(num2));
-        } else {
-            System.out.println(num1 + " is larger than " + num2);
-            System.out.println(num1 + num2);
-            System.out.println(num1.compareTo(num2));
-        }
         
     }
     public static class Solution {
         public String solution2(int[] numbers) {
             String answer = "haha";
-            int[] num0,num1,num2,num3,num4,num5 = {};
-            String numberStrings = numbers.toString();
-            
-            Arrays.sort(numbers);
-            
-            for(int i : numbers){
-                System.out.println((int)Math.log10(i)+1);
-                int numLength = (int)Math.log10(i)+1;
-
-                num = {};
-            }
+            int[] arr = 
+            // 3, 30
+            Arrays.sort(numbers,(o1,o2) -> (o2+o1).compareTo(o1+o2));
 
             //1~n자리수 별로 나누고
             //무조건 큰 1자리 수가 먼저 온다.
